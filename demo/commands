@@ -1,0 +1,37 @@
+java -version
+mvn -version
+
+D:
+cd "D:\Final Year\DevOps Lab\Experiment 9"
+
+
+mvn archetype:generate -DgroupId=com.example -DartifactId=demo -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.5 -DinteractiveMode=false
+
+cd demo
+code .
+
+
+Step 4: Configure pom.xml
+
+Step 5: Write App.java
+Open src/main/java/com/example/App.java.
+
+Step 6: Write AppTest.java
+Open src/test/java/com/example/AppTest.java.
+
+mvn clean
+
+
+mvn compile
+
+mvn test
+
+mvn package
+
+mvn install
+
+Step 8: Run Java JAR file
+java -jar target\demo-1.0-SNAPSHOT.jar
+
+Step 9: Verify generated files
+tree target 
